@@ -373,15 +373,61 @@ th {
     text-align: left;
 }
 
-.profile {
+main {
+    margin: 48px 0;
+}
+
+main h2 {
+text-align: center;
+}
+
+form {
     display: flex;
-    margin: 20px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: var(--grey);
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 48px auto;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+div label {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+input {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    border: none;
+    background-color: var(--beige500);
+    padding: 10px;
+    width: 270px;
+}
+
+
+textarea {
+    display: flex;
+    background-color: var(--beige500);
+    border: none;
+    font-family: 'Montserrat';
+    padding: 10px;
+    width: 270px;
+    margin-top: 10px;
+}
+
+.contact-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 
 @media (max-width: 900px) {

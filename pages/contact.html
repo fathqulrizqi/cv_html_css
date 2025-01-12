@@ -3,96 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Contact</title>
 </head>
 <body>
     <header>
         <nav>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/experiences.html">Experience</a></li>
-                <li><a style="background-color: var(--yellow600);" href="../pages/contact.html">Contact</a></li>
+                <li><a style="background-color: var(--yellow600);" href="index.html">Home</a></li>
+                <li><a href="experiences.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Lorem Ipsum</h2>
-
-
-    <form action="contact-submit.html">
-
-        <label for="nama">Name:</label>
-        <input type="text" id="nama" minlength="3" maxlength="20" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-
-        <label for="num">Phone:</label>
-        <input type="number" id="num" required>
+        <form action="contact-submit.html">
+        <div>
+            <label for="nama">Name:</label>
+            <input type="text" id="nama" minlength="3" maxlength="20" required>
+        </div>
         
-        <label>Description: <textarea style="resize: none;" rows="5" required></textarea></label>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        
+        <div>
+            <label for="num">Phone:</label>
+            <input type="number" id="num" required>
+        </div>
+       
+        <div>
+            <label>Description: <textarea style="resize: none;" rows="5" required></textarea></label>
+
+        </div>
 
         <button>Submit</button>
     </form>
-    
-
-
-
-
-        <!-- <form action="../index.html" method="POST">
-    
-            <label for="nama">Nama</label>
-            <input type="text" id="nama" required>
-        
-    
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
-        
-    
-            <label for="telp">Telp</label>
-            <input type="number" id="telp" required>
-        
-    
-            <label for="desc">Description</label>
-            <textarea rows="5" id="desc" required></textarea>
-        
-            <input type="submit" value="Submit">
-        </form> -->
     </main>
+
     <footer>
         <div class="location-wrap">
             <div class="location">
             <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
-            <!-- <img src="" alt=""> -->
-            <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro neque beatae! Deleniti, magnam! Aspernatur soluta mollitia</p>
+            <p style="font-size: 11px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro neque beatae! Deleniti, magnam! Aspernatur soluta mollitia</p>
             </div>
         </div>
         <div class="social-media">
             <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
             <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
             <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
-<!-- 
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt=""> -->
         </div>
         <div class="contact-wrap">
             <div class="contact">
                 <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
-                <!-- <img src="" alt=""> -->
-                <p class="small">Lorem ipsum</p>
+                <p style="font-size: 11px;">Lorem ipsum</p>
             </div>
             <div class="contact">
                 <div style="width: 35px; height: 35px; background-color: var(--beige500); border-radius: 50%;"></div>
-                <!-- <img src="" alt=""> -->
-                <p class="small">Lorem ipsum</p>
+                <p style="font-size: 11px;">Lorem ipsum</p>
             </div>
         </div>
     </footer>
     <section class="credit">
         <caption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro neque beatae!</caption>
     </section>
-
 </body>
 </html>
