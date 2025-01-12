@@ -152,7 +152,7 @@ a:hover {
     justify-content: center;
     width: 100%;
     gap: 40px;
-    padding: 24px 0;
+    padding: 48px 0;
     background-color: var(--yellow700);
     color: var(--beige50);
     display: flex;
@@ -164,7 +164,7 @@ a:hover {
 .skills-card {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
 }
 
 .skills-content {
@@ -192,10 +192,8 @@ a:hover {
 }
 
 aside img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    max-height: 300px; 
+    width: 300px;
+    height: 300px; 
     object-fit: cover; 
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
@@ -221,12 +219,12 @@ aside img {
 }
 
 .experience {
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 48px 0;
+    padding: 24px 0;
     flex-wrap: wrap;
     align-items: center;
     gap: 24px;
@@ -258,6 +256,16 @@ aside img {
     display: flex;
     flex-direction: row;
     gap: 24px;
+}
+
+
+.see-more {
+    padding: 0;
+    background-color: transparent;
+}
+
+.see-more:hover {
+    background-color: transparent;
 }
 
 footer {
@@ -376,7 +384,8 @@ th {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    
     body {
         flex-direction: column;
     }
@@ -397,6 +406,10 @@ th {
         flex-wrap: wrap;
         gap: 5px;
         padding: 8px 12px;
+    }
+
+    .landing {
+        padding: 96px 0;
     }
 
     footer {
@@ -424,45 +437,120 @@ th {
         width: 100%;
         text-align: center;
     }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .skills-card {
+        flex-wrap: wrap;
+        scale: 0.8;
+    }
+
     aside img {
-        max-width: 200px;
-        max-height: 200px;
+        display: flex;
+        width: 200px;
+        height: 200px;
+        margin: 12px 12px;
+    }
+
+    .about {
+        gap: 24px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .content {
+        gap: 12px;
+    }
+
+    article {
+        flex-wrap: wrap;
+        scale: 0.8;
+        margin: 0;
+    }
+
+    .education {
+        flex-wrap: wrap;
+        scale: 0.8;
+        margin: 12px 0;
+    }
+
+    .experience {
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        gap: 24px 0;
+        margin: 48px 0;
+    }
+
+    .experience-content {
+        display: flex;
+        scale: 0.8;
+        gap: 24px;
+    }
+
+    .experience-content-wrap{
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .experience-description {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .credit {
+        font-size: 12px;
     }
 }
 
 
-@media (max-width: 535px) {
+@media (max-width: 550px) {
+    
     header {
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
         height: 50px;
-        align-items: center;
+        width: 100%;
     }
 
-    nav {
-        padding: 2px;
-        gap: 2px;
-        scale: 0.8;
-        background-color: transparent;
-    }
 
     .hamburger-menu {
         display: block;
         padding: 0 48px;
+
     }
 
     nav ul {
         display: none;
     }
 
+    .landing {
+        padding: 48px;
+    }
 
     footer {
         flex-wrap: wrap;
         padding: 8px 8px;
     }
 
-    .location-wrap {
-        scale: 0.5;
+    .location {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .location-wrap {
+        scale: 0.8;
+    }
+
 
     .social-media {
         scale: 0.8;
@@ -478,7 +566,7 @@ th {
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     h2 {
@@ -488,4 +576,114 @@ th {
     button {
         padding: 10px 
     }
+
+    .skills {
+        gap: 10px;
+    }
+
+    .skills-card {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .skills-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    aside img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+
+    .content {
+        scale: 0.8;
+        display: flex;
+        width: 100%;
+        text-align: center;
+    }
+
+    .education {
+        flex-wrap: wrap;
+        gap: 0;
+        margin: 0;
+    }
+    
+    .education-content {
+        scale: 0.6;
+    }
+
+    .experience {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+    }
+
+    .experience-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .experience button {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    header {
+        width: 100%;
+        justify-content: left;
+        height: 50px;
+    }
+
+    .carousel-text {
+        font-size: 16px;
+    }
+
+    .contact-wrap {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills {
+        padding: 12px 0;
+        gap: 0;
+    }
+
+    .skills-card {
+        padding: 0;
+        scale: 0.6;
+    }
+
+    .education {
+        width: 100%;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .experience {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+    }
+
+
 }
