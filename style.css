@@ -287,9 +287,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 48px;
   background-color: var(--yellow500);
-  padding: 24px 24px;
+  padding: 24px 48px;
   box-sizing: border-box;
 }
 
@@ -301,36 +300,36 @@ footer {
   justify-content: center;
 }
 
+
 .location {
   display: flex;
   gap: 12px;
   justify-content: center;
   align-items: center;
-}
-
-.location > p {
-  width: 250px;
-  text-align: center;
+  flex-direction: column;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 48px;
 }
 
 .contact-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 12px;
+  padding: 48px 0;
 }
 
 .contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 48px;
+  padding-bottom: 10px;
 }
 
 .contact > div {
@@ -493,6 +492,11 @@ ul.active {
 
   .contact p {
     display: none;
+  }
+
+  .contact-wrap {
+    gap: 24px;
+    padding: 12px 24px;
   }
 
   .about {
