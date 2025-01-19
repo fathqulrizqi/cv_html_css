@@ -288,7 +288,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: var(--yellow500);
-  padding: 24px 48px;
+  padding: 0 48px;
   box-sizing: border-box;
 }
 
@@ -614,7 +614,6 @@ ul.active {
 
   footer {
     flex-wrap: wrap;
-    padding: 8px 8px;
   }
 
   .location {

@@ -17,46 +17,49 @@
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="experiences.html">Experience</a></li>
-                <li><a style="background-color: var(--yellow600);"  href="contact.html">Contact</a></li>
+                <li><a style="background-color: var(--yellow600);" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-        <div class="main">
-            <h2 class="title">Contact Me</h2>
+
+    <main>
+        <section class="contact">
             <form action="contact-submit.html">
-            <div>
-                <label for="nama">Name:</label>
-                <input type="text" id="nama" minlength="3" maxlength="20" required>
-            </div>
-            
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-            </div>
-            
-            <div>
-                <label for="num">Phone:</label>
-                <input type="number" id="num" required>
-            </div>
-           
-            <div>
-                <label>Description: <textarea style="resize: none;" rows="5" required></textarea></label>
-    
-            </div>
-            <button>Submit</button>
-        </div>
-        
-    </form>
+                <h2 class="title">Contact Me</h2>
+                <div>
+                    <label for="nama">Name:</label>
+                    <input type="text" id="nama" minlength="3" maxlength="20" required>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div>
+                    <label for="num">Phone:</label>
+                    <input type="number" id="num" required>
+                </div>
+
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" style="resize: none;" rows="5" required></textarea>
+                </div>
+
+                <button style="margin: 24px;" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <div class="location-wrap">
             <div class="location">
-            <p style="font-size: 11px; text-align: left;">motto:</p>
-            <h2 class="title">Now or Never!</h2>
+                <p style="font-size: 11px; text-align: left;">motto:</p>
+                <h2 class="title">Now or Never!</h2>
             </div>
         </div>
         <div class="social-media">
-            <i class="fa-brands fa-instagram fa-2xl" ></i>
+            <i class="fa-brands fa-instagram fa-2xl"></i>
             <i class="fa-brands fa-tiktok fa-xl"></i>
             <i class="fa-brands fa-facebook fa-2xl"></i>
         </div>
@@ -75,6 +78,7 @@
             </div>
         </div>
     </footer>
+
     <section class="credit">
         <caption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum porro neque beatae!</caption>
     </section>
