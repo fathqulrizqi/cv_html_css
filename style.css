@@ -150,6 +150,14 @@ a {
   font-size: 16px;
 }
 
+.none {
+  background-color: transparent;
+  padding: 0;
+}
+
+.none:hover {
+  background-color: transparent;
+}
 
 a:hover {
   background-color: var(--yellow50);
